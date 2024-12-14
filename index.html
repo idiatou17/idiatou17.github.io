@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idiatou Diallo - Site de Formation</title>
+    <title>Atelier sur les Revues Scoping et Systématiques</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background: linear-gradient(120deg, #84fab0, #8fd3f4);
             color: #333;
         }
 
         header {
-            background-color: #4caf50;
-            color: white;
-            padding: 15px;
             text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
 
         nav {
-            background-color: #333;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            background-color: #0072ff;
+            padding: 10px 0;
         }
 
         nav a {
-            float: left;
-            display: block;
             color: white;
-            text-align: center;
-            padding: 14px 16px;
             text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #00c6ff;
+            border-radius: 5px;
         }
 
         .container {
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .section-title {
-            color: #4caf50;
-            margin-bottom: 10px;
+            color: #0072ff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
         }
 
         footer {
-            background-color: #333;
+            background-color: #0072ff;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -68,7 +81,7 @@
         }
 
         a {
-            color: #4caf50;
+            color: #0072ff;
             text-decoration: none;
         }
 
@@ -76,17 +89,24 @@
             text-decoration: underline;
         }
 
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
         .image-section img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur le site de formation d’Idiatou Diallo</h1>
-        <p>Renforcer les capacités académiques et scientifiques en Afrique francophone</p>
+        <h1>Atelier sur les Revues Scoping et Systématiques</h1>
+        <p>Renforcer les capacités des chercheurs en Guinée et au Mali dans la réalisation des revues de littérature.</p>
     </header>
 
     <nav>
@@ -98,31 +118,27 @@
 
     <div id="home" class="container">
         <h2 class="section-title">Présentation</h2>
-        <p>Bonjour, je suis Idiatou Diallo, une passionnée d’éducation et de développement des compétences. Avec une vaste expérience en santé mondiale et en formation académique, je suis ravie d’offrir un cours complet destiné aux doctorants de Guinée et du Mali. Ce cours met l’accent sur des compétences essentielles telles que la rédaction d’articles scientifiques en anglais et l’utilisation d’outils modernes pour réussir académiquement.</p>
-
-        <div class="image-section">
-            <h3 class="section-title">Photos inspirantes</h3>
-            <img src="https://via.placeholder.com/600x400" alt="Scoping et Revue Systématique">
-            <img src="https://via.placeholder.com/600x400" alt="Renforcement des capacités en milieu à ressources limitées">
-        </div>
-    </div>
-
-    <div id="documents" class="container">
-        <h2 class="section-title">Documents</h2>
-        <ul>
-            <li><a href="https://github.com/example1" target="_blank">Dépôt de Projet 1</a></li>
-            <li><a href="https://github.com/example2" target="_blank">Dépôt de Projet 2</a></li>
-            <li><a href="https://github.com/example3" target="_blank">Dépôt de Projet 3</a></li>
-        </ul>
+        <p>Bienvenue à notre atelier, un espace d'apprentissage conçu pour les chercheurs des pays à ressources limitées, 
+        notamment en Guinée et au Mali. Cet atelier offre des formations pratiques sur les revues de portée (scoping reviews) et 
+        systématiques, afin de soutenir les étudiants et les chercheurs dans la maîtrise de ces méthodes essentielles.</p>
     </div>
 
     <div id="resources" class="container">
         <h2 class="section-title">Ressources</h2>
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=example1" target="_blank">Tutoriel Vidéo 1</a></li>
-            <li><a href="https://www.youtube.com/watch?v=example2" target="_blank">Tutoriel Vidéo 2</a></li>
-            <li><a href="https://www.youtube.com/watch?v=example3" target="_blank">Tutoriel Vidéo 3</a></li>
-            <li><a href="https://www.youtube.com/watch?v=example4" target="_blank">Tutoriel Vidéo 4</a></li>
+            <li><a href="https://www.youtube.com/watch?v=example1" target="_blank">Introduction aux revues scoping</a></li>
+            <li><a href="https://www.youtube.com/watch?v=example2" target="_blank">Tutoriel sur les revues systématiques</a></li>
+            <li><a href="https://www.prisma-statement.org/" target="_blank">Directives PRISMA</a></li>
+            <li><a href="https://www.cochranelibrary.com/" target="_blank">Bibliothèque Cochrane</a></li>
+        </ul>
+    </div>
+
+    <div id="documents" class="container">
+        <h2 class="section-title">Documents</h2>
+        <ul>
+            <li><a href="https://github.com/example1" target="_blank">Guide de formation</a></li>
+            <li><a href="https://github.com/example2" target="_blank">Exemple de protocole</a></li>
+            <li><a href="https://github.com/example3" target="_blank">Checklist PRISMA</a></li>
         </ul>
     </div>
 
@@ -136,7 +152,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Idiatou Diallo. Tous droits réservés.</p>
+        <p>&copy; 2024 Atelier sur les Revues Scoping et Systématiques. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
