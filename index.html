@@ -9,14 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #84fab0, #8fd3f4);
+            background: linear-gradient(120deg, #e07a5f, #81b29a);
             color: #333;
         }
 
         header {
             text-align: center;
             padding: 50px 20px;
-            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            background: linear-gradient(90deg, #e07a5f, #f4a261);
             color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -34,7 +34,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #0072ff;
+            background-color: #e07a5f;
             padding: 10px 0;
         }
 
@@ -47,7 +47,7 @@
         }
 
         nav a:hover {
-            background-color: #00c6ff;
+            background-color: #f4a261;
             border-radius: 5px;
         }
 
@@ -56,18 +56,22 @@
         }
 
         .section-title {
-            color: #0072ff;
+            color: #e07a5f;
             font-size: 1.8em;
             margin-bottom: 20px;
         }
 
+        .divider {
+            border-top: 3px solid #81b29a;
+            margin: 40px 0;
+        }
+
         footer {
-            background-color: #0072ff;
+            background-color: #e07a5f;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            position: fixed;
-            bottom: 0;
+            padding: 10px 0;
+            position: relative;
             width: 100%;
         }
 
@@ -81,7 +85,7 @@
         }
 
         a {
-            color: #0072ff;
+            color: #e07a5f;
             text-decoration: none;
         }
 
@@ -101,6 +105,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        .icon {
+            display: inline-block;
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body>
@@ -118,37 +129,39 @@
 
     <div id="home" class="container">
         <h2 class="section-title">Présentation</h2>
-        <p>Bienvenue à notre atelier, un espace d'apprentissage conçu pour les chercheurs des pays à ressources limitées, 
-        notamment en Guinée et au Mali. Cet atelier offre des formations pratiques sur les revues de portée (scoping reviews) et 
-        systématiques, afin de soutenir les étudiants et les chercheurs dans la maîtrise de ces méthodes essentielles.</p>
+        <p><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3445/3445810.png" alt="icon"> Bienvenue à notre atelier, un espace d'apprentissage conçu pour les chercheurs des pays à ressources limitées, notamment en Guinée et au Mali. Cet atelier offre des formations pratiques sur les revues de portée (scoping reviews) et systématiques, afin de soutenir les étudiants et les chercheurs dans la maîtrise de ces méthodes essentielles.</p>
+        <div class="divider"></div>
     </div>
 
     <div id="resources" class="container">
         <h2 class="section-title">Ressources</h2>
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=example1" target="_blank">Introduction aux revues scoping</a></li>
-            <li><a href="https://www.youtube.com/watch?v=example2" target="_blank">Tutoriel sur les revues systématiques</a></li>
-            <li><a href="https://www.prisma-statement.org/" target="_blank">Directives PRISMA</a></li>
-            <li><a href="https://www.cochranelibrary.com/" target="_blank">Bibliothèque Cochrane</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3064/3064734.png" alt="icon"> <a href="https://www.youtube.com/watch?v=example1" target="_blank">Introduction aux revues scoping</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3445/3445777.png" alt="icon"> <a href="https://www.youtube.com/watch?v=example2" target="_blank">Tutoriel sur les revues systématiques</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2143/2143360.png" alt="icon"> <a href="https://www.prisma-statement.org/" target="_blank">Directives PRISMA</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1006/1006544.png" alt="icon"> <a href="https://www.cochranelibrary.com/" target="_blank">Bibliothèque Cochrane</a></li>
         </ul>
+        <div class="divider"></div>
     </div>
 
     <div id="documents" class="container">
         <h2 class="section-title">Documents</h2>
         <ul>
-            <li><a href="https://github.com/example1" target="_blank">Guide de formation</a></li>
-            <li><a href="https://github.com/example2" target="_blank">Exemple de protocole</a></li>
-            <li><a href="https://github.com/example3" target="_blank">Checklist PRISMA</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/4024/4024446.png" alt="icon"> <a href="https://github.com/example1" target="_blank">Guide de formation</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3209/3209071.png" alt="icon"> <a href="https://github.com/example2" target="_blank">Exemple de protocole</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2789/2789025.png" alt="icon"> <a href="https://github.com/example3" target="_blank">Checklist PRISMA</a></li>
         </ul>
+        <div class="divider"></div>
     </div>
 
     <div id="contact" class="container">
         <h2 class="section-title">Contact</h2>
         <ul>
-            <li>Email : Idiatou Diallo - <a href="mailto:idiallo@hsph.harvard.edu">idiallo@hsph.harvard.edu</a></li>
-            <li>Email : Yaya Togo - <a href="mailto:yaya.togo@gmail.com">yaya.togo@gmail.com</a></li>
-            <li>Email : Kani Agathe Coulibaly - <a href="mailto:kaniac@icermali.org">kaniac@icermali.org</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="icon"> Email : Idiatou Diallo - <a href="mailto:idiallo@hsph.harvard.edu">idiallo@hsph.harvard.edu</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/732/732223.png" alt="icon"> Email : Yaya Togo - <a href="mailto:yaya.togo@gmail.com">yaya.togo@gmail.com</a></li>
+            <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/732/732235.png" alt="icon"> Email : Kani Agathe Coulibaly - <a href="mailto:kaniac@icermali.org">kaniac@icermali.org</a></li>
         </ul>
+        <div class="divider"></div>
     </div>
 
     <footer>
